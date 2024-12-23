@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form(User Detail)</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+</head>
+
+<body>
+    <h1>User Details</h1>
+    <hr>
+    <div class="info">
+        <form method="POST">
+            <label for="fullname" >Fullname</label>
+            <input type ="text" name="username"  id="fullname"><br><br>
+            <label for="email">Email address</label>
+            <input type ="text" name="useremail" type="email"  id="email"><br><br>
+            <b><label for="age">Age</label></b>
+            <input  type="text" name="age"  placeholder="Enter your age">
+            <br><br>
+            <b><label for="gender">Gender</label></b>
+            <div class="male-check">
+                <input  type="radio" name="genderMale" id="male" required value="Male" checked>
+                <b><label for="male">Male</label></b>
+            </div>
+            <div class="female-check">
+                <input   type="radio" name="genderFemale" id="female" required value="Female">
+                <b><label for="female">Female</label></b>
+            </div>
+            <br/><br/>
+            <div class="totalIncome">
+                <input type="checkbox" name="totalincome" id="Totalincome">
+                <label for="totalincome" >Total Income</label>
+                <input type="text" name="totalincome" required placeholder="Enter the amount">
+            </div>
+            <br><br>
+            <div class="expenses">
+                <label for="expense categories">Expenses categories</label>
+                <br/><br/>
+                <input type="checkbox" name="checkbox" id="utilities" value="utilchk">
+                <b><label for="utilities">Utilities</label>
+               <span class="checkmark"></span>
+                <input type="text" name="utilities"  required placeholder="Enter the amount">
+                <br/><br/>
+                <input type="checkbox" name="checkbox" id="entertainment" value="enterchk">
+                <b><label for="entertainment">Entertainment</label></b>
+                
+            <span class="checkmark"></span>
+            
+                <input type="text" name="entertainment" id="entertainment" placeholder="Enter the amount">
+                <br /><br />
+                <input type="checkbox" name="checkbox" id="schoolfees" value="schoolchk">
+                <b><label for="schoolfees">School Fees</label></b>
+                <span class="checkmark"></span>
+                <input type="text" name="schoolfees" id="schoolfees" placeholder="Enter the school fees amount">
+                
+                <br /><br />
+                <input type="checkbox" name="checkbox" id="shopping" value="shoppchk">
+                <b><label for="shopping">Shopping</label></b>
+                <span class="checkmark"></span>
+                <input type="text" name="shopping" required placeholder="Enter the shopping amount">
+                <br /><br />
+                <input type="checkbox" name="checkbox" id="heathcare" value="healthchk">
+                <b><label for="heathcare">Health care</label></b>
+                <span class="checkmark"></span>
+                <input type="text" name="healthcare" required placeholder="Enter the health  care amount">
+            </div>
+            <br/><br/>
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </div>
+    <hr>
+
+
+</body>
+
+</html>
